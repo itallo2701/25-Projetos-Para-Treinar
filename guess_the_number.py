@@ -11,5 +11,6 @@ def guess(x):
 			print("Tente Novamente. Muito Alto")
 	
 	print(f"Parabens, você acertou o numero.")
-	
-guess(200)
+
+y = input("Ate qual numero você gostaria de adivinhar")
+guess(int(y))
