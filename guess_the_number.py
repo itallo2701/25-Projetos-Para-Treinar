@@ -12,5 +12,5 @@ def guess(x):
 	
 	print(f"Parabens, você acertou o numero.")
 
-y = input("Ate qual numero você gostaria de adivinhar")
+y = input("Ate qual numero você gostaria de adivinhar ? ")
 guess(int(y))
