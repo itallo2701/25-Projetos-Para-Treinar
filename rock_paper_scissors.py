@@ -9,7 +9,7 @@ def pedra_papel_tesoura():
 			pc = choice(itens)
 		else:
 			break
-		feedback = input("Escolha : \n p = pedra\n a = papel \n t = tesoura\n sua escolha : ")
+		feedback = input("Caso queira sair digite 'q'\nEscolha : \n p = pedra\n a = papel \n t = tesoura\n sua escolha : ")
 		
 			#pedra
 		if feedback == 'p' and pc == 'pedra':
@@ -18,6 +18,7 @@ def pedra_papel_tesoura():
 			print(f"Você perdeu o computador escolheu {pc}\n")
 		elif feedback == 'p' and pc =='tesoura':
 			print(f"Você ganhou o computador escolheu {pc}\n")
+			
 			
 			#papel
 		elif feedback == 'a' and pc =='papel':
@@ -34,5 +35,7 @@ def pedra_papel_tesoura():
 			print(f"Empate ambos escolheram {pc}\n")
 		elif feedback == 't' and pc =='pedra':
 			print(f"Você perdeu o computador escolheu {pc}\n")
+		elif feedback == 'q':
+			break
 
 pedra_papel_tesoura()
